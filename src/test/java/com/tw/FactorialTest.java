@@ -33,4 +33,13 @@ public class FactorialTest {
 
         assertEquals(6,result);
     }
+
+    @Test
+    void ShouldReturn_3628800_AsFactorialWhenTenIsPassed() {
+        Factorial factorial = new Factorial(10);
+
+        int result = factorial.getFactorial();
+
+        assertEquals(3628800,result);
+    }
 }
