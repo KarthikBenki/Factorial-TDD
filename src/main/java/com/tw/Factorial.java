@@ -2,6 +2,8 @@ package com.tw;
 
 public class Factorial {
 
+    public static final int UNIT = 1;
+    private int factorial = 1;
     private final int number;
 
     public Factorial(int number) {
@@ -9,11 +11,10 @@ public class Factorial {
     }
 
     public int getFactorial() {
-        if (number == 0) return 1;
-        int prod = 1;
-        for (int factor = this.number; factor > 1; factor--) {
-            prod *= factor;
+        if (number == 0) return factorial;
+        for (int factor = this.number; factor > UNIT; factor--) {
+            factorial *= factor;
         }
-        return prod;
+        return factorial;
     }
 }
