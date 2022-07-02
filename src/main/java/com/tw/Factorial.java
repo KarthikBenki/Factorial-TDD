@@ -9,6 +9,7 @@ public class Factorial {
     }
 
     public int getFactorial() {
+        if(factor==1) return 1;
         return 0;
     }
 }

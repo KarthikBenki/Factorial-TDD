@@ -14,4 +14,14 @@ public class FactorialTest {
 
         assertEquals(0,result);
     }
+
+    @Test
+    void ShouldReturnOneAsFactorialWhenNumberOneIsPassed() {
+        Factorial factorial = new Factorial(1);
+
+        int result = factorial.getFactorial();
+
+        assertEquals(1,result);
+
+    }
 }
