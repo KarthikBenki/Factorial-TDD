@@ -9,7 +9,11 @@ public class Factorial {
     }
 
     public int getFactorial() {
+        int prod=1;
         if(factor==1) return 1;
-        return 0;
+        for (int factor = this.factor; factor > 1; factor--) {
+            prod *= factor;
+        }
+        return prod;
     }
 }

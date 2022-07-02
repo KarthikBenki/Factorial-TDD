@@ -24,4 +24,13 @@ public class FactorialTest {
         assertEquals(1,result);
 
     }
+
+    @Test
+    void ShouldReturnSixAsFactorialWhenNumberThreeIsPassed() {
+        Factorial factorial = new Factorial(3);
+
+        int result = factorial.getFactorial();
+
+        assertEquals(6,result);
+    }
 }
