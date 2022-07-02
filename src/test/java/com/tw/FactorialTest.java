@@ -7,12 +7,12 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class FactorialTest {
 
     @Test
-    void ShouldReturnZeroAsFactorialWhenNumberZeroIsPassed() {
+    void ShouldReturnOneAsFactorialWhenNumberZeroIsPassed() {
         Factorial factorial = new Factorial(0);
 
         int result = factorial.getFactorial();
 
-        assertEquals(0,result);
+        assertEquals(1,result);
     }
 
     @Test
